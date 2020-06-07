@@ -68,8 +68,12 @@
 "more.title" = "More";
 "more.search.prompt" = "Search for events and speakers";
 "more.section.years" = "Previous years";
+"more.section.recent" = "Recent";
 "more.section.about" = "About";
 "more.section.other" = "Other";
+
+/// MARK: - Recent
+"recent.video" = "Videos";
 
 /// MARK: - Acknowledgements
 "acknowledgements.title" = "Acknowledgements";

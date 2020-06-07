@@ -48,6 +48,8 @@ extension MoreController: MoreViewControllerDelegate {
       moreViewControllerDidSelectCode(moreViewController)
     case .years:
       moreViewControllerDidSelectYears(moreViewController)
+    case .video:
+      moreViewControllerDidSelectVideo(moreViewController)
     case .history:
       moreViewControllerDidSelectHistory(moreViewController)
     case .devrooms:
@@ -73,6 +75,12 @@ extension MoreController: MoreViewControllerDelegate {
       let errorViewController = makeErrorViewController()
       moreViewController.present(errorViewController, animated: true)
     }
+  }
+
+  private func moreViewControllerDidSelectVideo(_ moreViewController: MoreViewController) {
+    let videoViewController = UIViewController()
+    let navigationController = UINavigationController(rootViewController: videoViewController)
+    moreViewController.showDetailViewController(navigationController, sender: nil)
   }
 
   private func moreViewControllerDidSelectYears(_ moreViewController: MoreViewController) {
