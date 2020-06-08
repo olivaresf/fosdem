@@ -151,7 +151,9 @@ extension BlueprintsViewController: UIPageViewControllerDataSource, UIPageViewCo
   }
 
   func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-    didChangeVisibleBlueprint()
+    if completed {
+      didChangeVisibleBlueprint()
+    }
   }
 
   func presentationCount(for pageViewController: UIPageViewController) -> Int {

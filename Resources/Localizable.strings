@@ -74,6 +74,8 @@
 
 /// MARK: - Recent
 "recent.video" = "Videos";
+"recent.video.watched" = "Watched";
+"recent.video.watching" = "Watching";
 
 /// MARK: - Acknowledgements
 "acknowledgements.title" = "Acknowledgements";
